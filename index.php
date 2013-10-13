@@ -1,7 +1,7 @@
 <?php
 
 
-print_r($_REQUEST);
+echo "ветка мастер!";
 
 
 ?>
