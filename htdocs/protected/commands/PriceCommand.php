@@ -370,7 +370,7 @@ class PriceCommand extends CConsoleCommand {
 		var_dump($mail);
 		$price = $this->sklad->parse_attach($mail_data,$mail);
 		# Бренд - Арт - Имя - кол-во -цена
-		$lines = $sklad->get_arr_uchetAuto($price,$mail_data['markup'],$mail_data['col_brand'],$mail_data['col_art'],$mail_data['col_name'],$mail_data['col_cnt'],$mail_data['col_price']);
+		$lines = $this->sklad->get_arr_uchetAuto($price,$mail_data['markup'],$mail_data['col_brand'],$mail_data['col_art'],$mail_data['col_name'],$mail_data['col_cnt'],$mail_data['col_price']);
 		/* Отладка что бы найти null поле*
 		$lines = '';
 		#var_dump($price);
@@ -388,7 +388,7 @@ class PriceCommand extends CConsoleCommand {
 					}
 				}
 		}
-		}
+		}*/
 		$file="tables.txt";
 		$fp = fopen($file, "w"); // ("r" - считывать "w" - создавать "a" - добовлять к тексту), мы создаем файл
 		fwrite($fp, $lines);

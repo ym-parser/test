@@ -357,6 +357,14 @@ Class SkladLoader{
 			}
 			foreach ($tmp as $id=>&$row){
 				foreach ($row as &$val){
+					$char = mb_detect_encoding($val,'auto');
+					var_dump($char);
+					if ($char != 'UTF-8'){
+						if ($char == 'ANSI'){$char = 'WINDOWS-1251';}
+						var_dump($char);
+						var_dump($val);
+						$val = iconv($char.'//TRANSLIT','UTF-8',$val);
+					}
 					$price[$id][$i]=$val;
 					++$i;
 				}
@@ -368,5 +376,37 @@ Class SkladLoader{
 		$exts = $this->getExt($mail['file_name']);
 		$price = $this->whatAttach($exts,$mail,$data);
 		return $price;
+	}
+	# готовим линии/строки для загрузки файла в учёт
+	# Подготовить строку для отправки в учёт
+	public function get_arr_uchetAuto($price,$per,$col_b,$col_a,$col_n,$col_c,$col_p){
+		$srch = array('\\','\'',"'",'"',"\n","\t","\0");
+		$lines ='';
+		$ary = 'auto';
+		foreach ($price as $id=>$skl){
+			if (isset($skl["$col_b"]) and isset($skl["$col_a"]) and isset($skl["$col_n"]) and isset($skl["$col_c"]) and isset($skl["$col_p"])){
+				#echo $id."\n";
+				#var_dump($price[$id]);
+				unset($price["$id"]);
+				$lines	.= trim(str_replace($srch,"",$skl["$col_b"]))."\t";//1	   # Бренд
+				$lines	.= str_replace($srch,"",$skl["$col_a"])."\t";//0			   # Артикул
+				$lines	.= str_replace($srch,"",$skl["$col_n"])."\t";//2			   # Наименование
+				$lines	.= preg_replace('/[^0-9a-z]+/i','',$skl["$col_a"])."\t";	   # Очищенный артикул
+				$lines	.= str_replace($srch,'',$skl["$col_c"])."\t";# Кол-во
+				$price["$id"]['price']	= str_replace($srch,'',$skl["$col_p"]);//4
+				$xprice		= str_replace(',','.',$price["$id"]['price']);
+				$cost =  $per*$xprice;
+				$cost =  round($cost,4);
+				$cost =  round($cost,3);
+				$cost =  round($cost,2);
+				$xprice		= number_format($cost,2,'.','');
+				$lines .=$xprice."\t\n";							   # Цена
+			}else{
+				unset($price["$id"]);
+			}
+		}
+		var_dump($lines);
+		return iconv('UTF-8','WINDOWS-1251//TRANSLIT',$lines);
+		#return $lines;
 	}
 }
