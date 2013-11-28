@@ -351,6 +351,21 @@ Class SkladLoader{
 		$price = $this->whatAttach($exts,$mail,$data);
 		return $price;
 	}
+	private function utf8($s){
+		$s=urlencode($s); // в некоторых случаях - лишняя операция (закоментируйте)
+		$res='0';
+		$j=strlen($s);
+		$s2=strtoupper($s);
+		$s2=str_replace("%D0",'',$s2);
+		$s2=str_replace("%D1",'',$s2);
+		$k=strlen($s2);
+		$m=1;
+		if ($k>0){
+			$m=$j/$k;
+			if (($m>1.2)&&($m<2.2)){ $res='1'; }
+		}
+		return $res;
+	}
 	# Парсим текст и CSV
 	private function parseTxt($name,$patch,$data){
 		$file_array = file($patch); # Считывание файла в массив $file_array
@@ -361,11 +376,16 @@ Class SkladLoader{
 			}
 			foreach ($tmp as $id=>&$row){
 				foreach ($row as &$val){
-					$val = $this->decode->charset_x_utf($val);
+					#$val = $this->decode->charset_x_utf($val);
+					$p = $this->utf8($val);
+					if ($p=='0'){
+						$val = iconv('windows-1251','utf-8',$val);
+					}
 					$price[$id][$i]=$val;
 					++$i;
 				}
 			}
+			var_dump($price);
 		return $price;
 	}
 	# Прасим вложения
