@@ -328,7 +328,7 @@ Class SkladLoader{
 				++$i;
 			}
 		}
-		var_dump($mail);
+		#var_dump($mail);
 		$exts = $this->getExt($mail['file_name']);
 		$price = $this->whatAttach($exts,$mail,$data);
 		return $price;
@@ -370,22 +370,23 @@ Class SkladLoader{
 	private function parseTxt($name,$patch,$data){
 		$file_array = file($patch); # Считывание файла в массив $file_array
 		$price = array();
-		$i=1;
+		$n=1;
 			foreach ($file_array as &$row){
 				$tmp[] = explode(';',$row);
 			}
 			foreach ($tmp as $id=>&$row){
+				$i=$n;
 				foreach ($row as &$val){
-					#$val = $this->decode->charset_x_utf($val);
-					$p = $this->utf8($val);
-					if ($p=='0'){
-						$val = iconv('windows-1251','utf-8',$val);
-					}
+					$val = $this->decode->charset_x_utf($val);
+					#$p = $this->utf8($val);
+					#if ($p=='0'){
+					#	$val = iconv('windows-1251','utf-8',$val);
+					#}
 					$price[$id][$i]=$val;
 					++$i;
 				}
 			}
-			var_dump($price);
+			#var_dump($price);
 		return $price;
 	}
 	# Прасим вложения
@@ -422,8 +423,8 @@ Class SkladLoader{
 				unset($price["$id"]);
 			}
 		}
-		var_dump($lines);
-		return iconv('UTF-8','WINDOWS-1251//TRANSLIT',$lines);
+		#var_dump($lines);
+		return iconv('utf-8','windows-1251//TRANSLIT',$lines);
 		#return $lines;
 	}
 }

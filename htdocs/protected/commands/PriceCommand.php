@@ -4,9 +4,11 @@
 		define('ATTACHMENTS_DIR', dirname(__FILE__) . '/prices/attachments');	# Папка с вложениями
 class PriceCommand extends CConsoleCommand {
 	private $sklad;
+	private $uchet;
 	public function __construct($id,$module=null) {
 		parent::__construct($id, $module);
 		$this->sklad = new SkladLoader;
+		$this->uchet = new Uchet;
 	}
 	##### Прайсы в Учет
 	public function actionUchetAutospec() {
@@ -371,27 +373,10 @@ class PriceCommand extends CConsoleCommand {
 		$price = $this->sklad->parse_attach($mail_data,$mail);
 		# Бренд - Арт - Имя - кол-во -цена
 		$lines = $this->sklad->get_arr_uchetAuto($price,$mail_data['markup'],$mail_data['col_brand'],$mail_data['col_art'],$mail_data['col_name'],$mail_data['col_cnt'],$mail_data['col_price']);
-		/* Отладка что бы найти null поле*
-		$lines = '';
-		#var_dump($price);
-		if(is_array($price)){
-		foreach ($price as $id=>&$shet){
-			$lines .= "[ID] = {$id} [VAL] = ".gettype($shet)." \n";
-				if(is_array($shet)){
-					foreach ($shet as $id2=>&$shet2){
-						$lines .= "[ID2] = {$id2} [VAL2] = ".gettype($shet2)." \n";
-						if(is_array($shet2)){
-							foreach ($shet2 as $id3=>&$shet3){
-								$lines .= "[ID3] = {$id3} [VAL3] = ".gettype($shet3)." \n";
-							}
-						}
-					}
-				}
-		}
-		}*/
-		$file="tables.txt";
-		$fp = fopen($file, "w"); // ("r" - считывать "w" - создавать "a" - добовлять к тексту), мы создаем файл
+		$file="logs/{$sid}.log";
+		$fp = fopen($file, "w");
 		fwrite($fp, $lines);
+		$this->uchet->rwhLoadGoods($sid,$lines);
 		/**/
 		#var_dump($price['1']);
 		

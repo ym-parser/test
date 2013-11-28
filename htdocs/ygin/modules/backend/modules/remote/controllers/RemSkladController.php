@@ -2,34 +2,30 @@
 
 class RemSkladController extends DaObjectController {
 	protected $idObject = 'project-sklady';
-	#private whr;
+	private $whr;
 	
-	/*public function __construct(){
-		$this->whr = new RemoteWh();
+	public function __construct($id,$module=null) {
+		parent::__construct($id, $module);
+		$this->whr = new RemoteWh;
 	}
-	*/
 	public function actionIndex(){
-		$whr = new RemoteWh();
-		$sklads = $whr->rwhGetList();
+		$sklads = $this->whr->rwhGetList();
 		#var_dump($sklads);
 		$this->render('/sklads', array(
 			'sklads' => $sklads,
 		));
 	}
 	public function actionSklad($id) {
-		$whr = new RemoteWh();
 		$this->render('/sklad', array(
-			'sklad' => $whr->rwhGetOne((int)$id),
-			'items' => $whr->rwhGetDetailsPage(array('id'=>(int)$id,'show'=>21,'page'=>1)),
+			'sklad' => $this->whr->rwhGetOne((int)$id),
+			'items' => $this->whr->rwhGetDetailsPage(array('id'=>(int)$id,'show'=>21,'page'=>1)),
 			'id'	=>$id,
 		));
 	}
 	public function actionShowGoodsInSklad($id,$page){
-		$whr = new RemoteWh();
-		var_dump($whr->rwhGetDetailsPage(array('id'=>(int)$id,'show'=>21,'page'=>(int)$page)));
+		var_dump($this->whr->rwhGetDetailsPage(array('id'=>(int)$id,'show'=>21,'page'=>(int)$page)));
 	}
 	public function actionSaveInfoSklad(){
-		$whr = new RemoteWh();
 		$arr = array(
 			'id'	=> HU::post('id'),
 			'name'	=> iconv('utf-8','windows-1251',HU::post('name')),
@@ -39,6 +35,12 @@ class RemSkladController extends DaObjectController {
 			'des'	=> iconv('utf-8','windows-1251',HU::post('des')),
 		);
 		var_dump($arr);
-		$whr->rwhAddUpdateOne($arr);
+		$this->whr->rwhAddUpdateOne($arr);
+	}
+	public function actionUpdate($sid){
+		echo '<pre>';
+			system('cd protected; php -q console.php price autoload --sid='.$sid, $code);
+		echo '<pre>';
+		echo 'Код возврата: '.$code;
 	}
 }

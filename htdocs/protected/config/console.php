@@ -30,6 +30,16 @@ return array(
 			  'enableProfiling' => true,
 			  'enableParamLogging' => true,
 		),
+		'dbU'=>array(
+			'class'=>'CDbConnection',
+			#'connectionString'=>'mssql:host=192.168.0.208:1433;dbname=T_Uchet',
+			'connectionString'=>'dblib:host=laf24.ru:14666;dbname=T_Uchet',
+			#'connectionString' => 'sqlsrv:server=192.168.0.208\sqlexpress,1433;Database=T_Uchet;',
+			'username'=>'sa',
+			'password'=>'masterkey',
+			'charset' => 'cp1251',
+			//'emulatePrepare'=>false,  // необходимо для некоторых версий инсталляций MySQL
+		),
 	),
 );
 
