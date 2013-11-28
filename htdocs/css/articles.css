@@ -1,0 +1,23 @@
+table.prtb{
+	border:0px;
+	border-collapse:collapse;
+	width:95%;
+	margin:10px;
+}
+a {
+	color: #003399;
+	text-decoration: none;
+}
+table.prtb td{
+padding:5px; /* cellpadding="0" */
+}
+.cost{
+	width:110px;
+}
+.prtrr {
+background-color: #ED1B24;
+}
+.prtdw {
+padding: 5px;
+color: white;
+}

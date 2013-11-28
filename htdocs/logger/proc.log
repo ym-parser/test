@@ -1,0 +1,108 @@
+2013-09-06 15:53:16
+--------
+Error_lvl: 102
+Proc_mess: Ошибка в строке заказа № 1. <>
+Error_sql_mes: 537: Invalid length parameter passed to the LEFT or SUBSTRING function.
+--------
+EXECUTE dbo.OrderProcessing @title='06.09.2013	15:53	2036	bunpav.vlad@gmail.com	p.bunaev@laf24.ru	Гентош Е. (ТЕСТ)	5229c22c4eb6f	', @lines='3	FEBI BILSTEIN	3015	03141	Сайлентблок пер. рычага  пер  KADETT  NEXIA  LANOS	118.81	2	
+3	HANGIL	72962	H23-DW008	96445043/Сайлентблок пер. рычага OPEL 0352349  KADETT E	68.04	1	
+4048	MOOG	0	PE-SB-1315	Сайл.блок стабилизатора пер.подвески	78.30	1	
+4048	MEYLE	0	6140350013	Сайл.блок пер.рычага	128.70	3	
+4050	RUVILLE	0	985324	Втулка стабилизатора	155.25	1	
+'----********----
+2013-09-06 15:58:18
+--------
+Error_lvl: 102
+Proc_mess: Ошибка в строке заказа № 1. <>
+Error_sql_mes: 537: Invalid length parameter passed to the LEFT or SUBSTRING function.
+--------
+EXECUTE dbo.OrderProcessing @title='06.09.2013	15:58	2036	bunpav.vlad@gmail.com	p.bunaev@laf24.ru	Р“РµРЅС‚РѕС€ Р•.       РўР•РЎРў                        
+		5229c35ac35ab	', @lines='3	FEBI BILSTEIN	3015	03141	РЎР°Р№Р»РµРЅС‚Р±Р»РѕРє РїРµСЂ. СЂС‹С‡Р°РіР°  РїРµСЂ  KADETT  NEXIA  LANOS	118.81	2	
+3	HANGIL	72962	H23-DW008	96445043/РЎР°Р№Р»РµРЅС‚Р±Р»РѕРє РїРµСЂ. СЂС‹С‡Р°РіР° OPEL 0352349  KADETT E	68.04	2	
+4048	MOOG	0	PE-SB-1315	РЎР°Р№Р».Р±Р»РѕРє СЃС‚Р°Р±РёР»РёР·Р°С‚РѕСЂР° РїРµСЂ.РїРѕРґРІРµСЃРєРё	78.30	3	
+4048	JP GROUP	0	1240200900	РЎР°Р№Р».Р±Р»РѕРє РїРµСЂ.СЂС‹С‡Р°РіР° [RUBBEX, DK]	105.30	1	
+'----********----
+2013-09-06 16:15:28
+--------
+Error_lvl: 102
+Proc_mess: Ошибка в строке заказа № 1. <>
+Error_sql_mes: 537: Invalid length parameter passed to the LEFT or SUBSTRING function.
+--------
+EXECUTE dbo.OrderProcessing @title='06.09.2013	16:15	2036	bunpav.vlad@gmail.com	p.bunaev@laf24.ru	Гентош Е.       ТЕСТ                        
+		5229c7606ca11	', @lines='3	FEBI BILSTEIN	3015	03141	Сайлентблок пер. рычага  пер  KADETT  NEXIA  LANOS	118.81	2	
+3	HANGIL	72962	H23-DW008	96445043/Сайлентблок пер. рычага OPEL 0352349  KADETT E	68.04	2	
+4048	MOOG	0	PE-SB-1315	Сайл.блок стабилизатора пер.подвески	78.30	3	
+4048	JP GROUP	0	1240200900	Сайл.блок пер.рычага [RUBBEX, DK]	105.30	1	
+'----********----
+2013-09-06 16:17:35
+--------
+Error_lvl: 102
+Proc_mess: Ошибка в строке заказа № 1. <>
+Error_sql_mes: 537: Invalid length parameter passed to the LEFT or SUBSTRING function.
+--------
+EXECUTE dbo.OrderProcessing @title='06.09.2013	16:17	2036	bunpav.vlad@gmail.com	p.bunaev@laf24.ru	Гентош Е.       ТЕСТ	5229c7dfd64ed	', @lines='3	FEBI BILSTEIN	3015	03141	Сайлентблок пер. рычага  пер  KADETT  NEXIA  LANOS	118.81	2	
+3	HANGIL	72962	H23-DW008	96445043/Сайлентблок пер. рычага OPEL 0352349  KADETT E	68.04	2	
+4048	MOOG	0	PE-SB-1315	Сайл.блок стабилизатора пер.подвески	78.30	3	
+4048	JP GROUP	0	1240200900	Сайл.блок пер.рычага [RUBBEX, DK]	105.30	1	
+'----********----
+2013-09-09 11:11:15
+--------
+Error_lvl: 102
+Proc_mess: Ошибка в строке заказа № 1. <>
+Error_sql_mes: 537: Invalid length parameter passed to the LEFT or SUBSTRING function.
+--------
+EXECUTE dbo.OrderProcessing @title='09.09.2013	11:11	2036	bunpav.vlad@gmail.com	p.bunaev@laf24.ru	Гентош Е. TEST	522d7493a5d9e	', @lines='3	FEBI BILSTEIN	3015	03141	Сайлентблок пер. рычага  пер  KADETT  NEXIA  LANOS	118.81	2	
+3	HANGIL	72962	H23-DW008	96445043/Сайлентблок пер. рычага OPEL 0352349  KADETT E	68.04	2	
+4048	MOOG	0	PE-SB-1315	Сайл.блок стабилизатора пер.подвески	78.30	3	
+4048	JP GROUP	0	1240200900	Сайл.блок пер.рычага [RUBBEX, DK]	105.30	1	
+'----********----
+2013-09-09 11:16:58
+--------
+Error_lvl: 0
+Proc_mess: <b>По заказу от 09.09.2013 сформирован(ы) резерв(ы) для клиента №: 2036</b><br><br><p>Склад 3; № д-та 0909/0001</p><table width=90% border="1" cellpadding="7" cellspacing="0">
+			 <tr>
+				 <td width="10%" heihgt=25 valign="center" align="center"><b>Ном. номер</b></td>
+				 <td width="20%" heihgt=25 valign="center" align="center"><b>Производитель</b></td>
+				 <td width="46%" heihgt=25 valign="center" align="center"><b>Наименование</b></td>
+				 <td width="7%" heihgt=25 valign="center" align="center"><b>К-во</b></td>
+				 <td width="17%" heihgt=25 valign="center" align="center"><b>Примечание</b></td>
+			 </tr><tr><td width="10%" valign="center" align="left">03141</td><td width="20%" valign="center" align="left">FEBI BILSTEIN</td><td width="46%" valign="center" align="left">Сайлентблок пер. рычага  пер  KADETT  NEXIA  LANOS</td><td width="7%" valign="center" align="right">2 (2)</td><td width="17%" valign="center" align="center"></td></tr><tr><td width="10%" valign="center" align="left">H23-DW008</td><td width="20%" valign="center" align="left">HANGIL</td><td width="46%" valign="center" align="left">96445043/Сайлентблок пер. рычага OPEL 0352349  KADETT E</td><td width="7%" valign="center" align="right">2 (2)</td><td width="17%" valign="center" align="center"></td></tr> </table><br><p>Склад 4048; № д-та 011268/13</p><table width=90% border="1" cellpadding="7" cellspacing="0">
+			 <tr>
+				 <td width="10%" heihgt=25 valign="center" align="center"><b>Ном. номер</b></td>
+				 <td width="20%" heihgt=25 valign="center" align="center"><b>Производитель</b></td>
+				 <td width="46%" heihgt=25 valign="center" align="center"><b>Наименование</b></td>
+				 <td width="7%" heihgt=25 valign="center" align="center"><b>К-во</b></td>
+				 <td width="17%" heihgt=25 valign="center" align="center"><b>Примечание</b></td>
+			 </tr><tr><td width="10%" valign="center" align="left">PE-SB-1315</td><td width="20%" valign="center" align="left">MOOG</td><td width="46%" valign="center" align="left">Сайл.блок стабилизатора пер.подвески</td><td width="7%" valign="center" align="right">3 (3)</td><td width="17%" valign="center" align="center"></td></tr><tr><td width="10%" valign="center" align="left">1240200900</td><td width="20%" valign="center" align="left">JP GROUP</td><td width="46%" valign="center" align="left">Сайл.блок пер.рычага [RUBBEX, DK]</td><td width="7%" valign="center" align="right">1 (1)</td><td width="17%" valign="center" align="center"></td></tr></table><br><b>Примечание: Гентош Е. TEST</b><br>
+Error_sql_mes:  
+--------
+EXECUTE dbo.OrderProcessing @title='09.09.2013	11:16	2036	bunpav.vlad@gmail.com	p.bunaev@laf24.ru	Гентош Е. TEST	522d75ea45505	', @lines='3	FEBI BILSTEIN	3015	03141	Сайлентблок пер. рычага  пер  KADETT  NEXIA  LANOS	118.81	2	
+3	HANGIL	72962	H23-DW008	96445043/Сайлентблок пер. рычага OPEL 0352349  KADETT E	68.04	2	
+4048	MOOG	0	PE-SB-1315	Сайл.блок стабилизатора пер.подвески	78.30	3	
+4048	JP GROUP	0	1240200900	Сайл.блок пер.рычага [RUBBEX, DK]	105.30	1	
+'----********----
+2013-09-09 11:18:13
+--------
+Error_lvl: 0
+Proc_mess: <b>По заказу от 09.09.2013 сформирован(ы) резерв(ы) для клиента №: 2036</b><br><br><p>Склад 3; № д-та 0909/0002</p><table width=90% border="1" cellpadding="7" cellspacing="0">
+			 <tr>
+				 <td width="10%" heihgt=25 valign="center" align="center"><b>Ном. номер</b></td>
+				 <td width="20%" heihgt=25 valign="center" align="center"><b>Производитель</b></td>
+				 <td width="46%" heihgt=25 valign="center" align="center"><b>Наименование</b></td>
+				 <td width="7%" heihgt=25 valign="center" align="center"><b>К-во</b></td>
+				 <td width="17%" heihgt=25 valign="center" align="center"><b>Примечание</b></td>
+			 </tr><tr><td width="10%" valign="center" align="left">03141</td><td width="20%" valign="center" align="left">FEBI BILSTEIN</td><td width="46%" valign="center" align="left">Сайлентблок пер. рычага  пер  KADETT  NEXIA  LANOS</td><td width="7%" valign="center" align="right">2 (2)</td><td width="17%" valign="center" align="center"></td></tr><tr><td width="10%" valign="center" align="left">H23-DW008</td><td width="20%" valign="center" align="left">HANGIL</td><td width="46%" valign="center" align="left">96445043/Сайлентблок пер. рычага OPEL 0352349  KADETT E</td><td width="7%" valign="center" align="right">2 (2)</td><td width="17%" valign="center" align="center"></td></tr> </table><br><p>Склад 4048; № д-та 011269/13</p><table width=90% border="1" cellpadding="7" cellspacing="0">
+			 <tr>
+				 <td width="10%" heihgt=25 valign="center" align="center"><b>Ном. номер</b></td>
+				 <td width="20%" heihgt=25 valign="center" align="center"><b>Производитель</b></td>
+				 <td width="46%" heihgt=25 valign="center" align="center"><b>Наименование</b></td>
+				 <td width="7%" heihgt=25 valign="center" align="center"><b>К-во</b></td>
+				 <td width="17%" heihgt=25 valign="center" align="center"><b>Примечание</b></td>
+			 </tr><tr><td width="10%" valign="center" align="left">PE-SB-1315</td><td width="20%" valign="center" align="left">MOOG</td><td width="46%" valign="center" align="left">Сайл.блок стабилизатора пер.подвески</td><td width="7%" valign="center" align="right">3 (3)</td><td width="17%" valign="center" align="center"></td></tr><tr><td width="10%" valign="center" align="left">1240200900</td><td width="20%" valign="center" align="left">JP GROUP</td><td width="46%" valign="center" align="left">Сайл.блок пер.рычага [RUBBEX, DK]</td><td width="7%" valign="center" align="right">1 (1)</td><td width="17%" valign="center" align="center"></td></tr></table><br><b>Примечание: Гентош Е. TEST</b><br>
+Error_sql_mes:  
+--------
+EXECUTE dbo.OrderProcessing @title='09.09.2013	11:18	2036	bunpav.vlad@gmail.com	p.bunaev@laf24.ru	Гентош Е. TEST	522d7635805cc	', @lines='3	FEBI BILSTEIN	3015	03141	Сайлентблок пер. рычага  пер  KADETT  NEXIA  LANOS	118.81	2	
+3	HANGIL	72962	H23-DW008	96445043/Сайлентблок пер. рычага OPEL 0352349  KADETT E	68.04	2	
+4048	MOOG	0	PE-SB-1315	Сайл.блок стабилизатора пер.подвески	78.30	3	
+4048	JP GROUP	0	1240200900	Сайл.блок пер.рычага [RUBBEX, DK]	105.30	1	
+'----********----

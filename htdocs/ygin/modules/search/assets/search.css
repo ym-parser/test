@@ -1,0 +1,10 @@
+.b-search .result-list {margin-top:20px;}
+.b-search .result-list .item {margin-bottom:40px}
+
+table{
+	width:100%;
+	border-collapse:collapse;
+}
+table,th, td{
+	border: 1px solid black !important;
+}

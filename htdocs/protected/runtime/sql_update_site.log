@@ -1,0 +1,80 @@
+-- 29.10.2013 13:22:48
+UPDATE `da_users` SET `id_user`=106, `name`='admin', `user_password`='86feb50be88268261fcc80beb319ce2791d663c4', `mail`='p.bunaev@laf24.ru', `full_name`='admin', `rid`=NULL, `create_date`=1382956835, `count_post`=0, `active`=1, `requires_new_password`=0, `salt`='90ef7892dbddeed33f00b9ebc0f1e78a5358c7e1', `password_strategy`='sha1' WHERE `da_users`.`id_user`=106;
+
+-- 29.10.2013 13:25:19
+INSERT INTO `da_users` (`create_date`, `count_post`, `active`, `requires_new_password`, `name`, `mail`, `user_password`, `full_name`, `salt`, `password_strategy`) VALUES (1383038719, 0, 1, 0, 'testUser', 'pbunaev@mail.ru', '9cebd82cdb89c9ab0b20ff81d4fefb90695cdc5a', 'fio', 'af51b15e7cfe9f807f53b2117f60205226eea53b', 'sha1');
+
+-- 05.11.2013 14:30:38
+INSERT INTO `da_search_history` (`phrase`, `query`, `info`, `date`, `ip`) VALUES ('OC264', '(MATCH value AGAINST (:q IN BOOLEAN MODE) AND id_lang=:l) AND (id_object NOT IN (:ycp0, :ycp1, :ycp2, :ycp3)) (params: Array (     [:q] => +OC264*     [:l] => 1     [:ycp0] => 512     [:ycp1] => 505     [:ycp2] => 504     [:ycp3] => 506 ) )', 'page=0; count=20', 1383647437, '127.0.0.1');
+
+-- 05.11.2013 14:32:27
+INSERT INTO `da_search_history` (`phrase`, `query`, `info`, `date`, `ip`) VALUES ('OC264', '(MATCH value AGAINST (:q IN BOOLEAN MODE) AND id_lang=:l) AND (id_object NOT IN (:ycp0, :ycp1, :ycp2, :ycp3)) (params: Array (     [:q] => +OC264*     [:l] => 1     [:ycp0] => 512     [:ycp1] => 505     [:ycp2] => 504     [:ycp3] => 506 ) )', 'page=0; count=20', 1383647547, '127.0.0.1');
+
+-- 19.11.2013 14:47:32
+INSERT INTO `da_search_history` (`phrase`, `query`, `info`, `date`, `ip`) VALUES ('OC195', '(MATCH value AGAINST (:q IN BOOLEAN MODE) AND id_lang=:l) AND (id_object NOT IN (:ycp0, :ycp1, :ycp2, :ycp3)) (params: Array (     [:q] => +OC195*     [:l] => 1     [:ycp0] => 512     [:ycp1] => 505     [:ycp2] => 504     [:ycp3] => 506 ) )', 'page=0; count=20', 1384858052, '81.24.112.62');
+
+-- 19.11.2013 14:49:28
+INSERT INTO `da_search_history` (`phrase`, `query`, `info`, `date`, `ip`) VALUES ('OC195', '(MATCH value AGAINST (:q IN BOOLEAN MODE) AND id_lang=:l) AND (id_object NOT IN (:ycp0, :ycp1, :ycp2, :ycp3)) (params: Array (     [:q] => +OC195*     [:l] => 1     [:ycp0] => 512     [:ycp1] => 505     [:ycp2] => 504     [:ycp3] => 506 ) )', 'page=0; count=20', 1384858168, '81.24.112.62');
+
+-- 19.11.2013 14:55:31
+INSERT INTO `da_search_history` (`phrase`, `query`, `info`, `date`, `ip`) VALUES ('17773', '(MATCH value AGAINST (:q IN BOOLEAN MODE) AND id_lang=:l) AND (id_object NOT IN (:ycp0, :ycp1, :ycp2, :ycp3)) (params: Array (     [:q] => +17773*     [:l] => 1     [:ycp0] => 512     [:ycp1] => 505     [:ycp2] => 504     [:ycp3] => 506 ) )', 'page=0; count=20', 1384858531, '81.24.112.62');
+
+-- 19.11.2013 15:02:51
+INSERT INTO `da_search_history` (`phrase`, `query`, `info`, `date`, `ip`) VALUES ('01089', '(MATCH value AGAINST (:q IN BOOLEAN MODE) AND id_lang=:l) AND (id_object NOT IN (:ycp0, :ycp1, :ycp2, :ycp3)) (params: Array (     [:q] => +01089*     [:l] => 1     [:ycp0] => 512     [:ycp1] => 505     [:ycp2] => 504     [:ycp3] => 506 ) )', 'page=0; count=20', 1384858971, '81.24.112.62');
+
+-- 19.11.2013 15:04:01
+INSERT INTO `da_search_history` (`phrase`, `query`, `info`, `date`, `ip`) VALUES ('25930', '(MATCH value AGAINST (:q IN BOOLEAN MODE) AND id_lang=:l) AND (id_object NOT IN (:ycp0, :ycp1, :ycp2, :ycp3)) (params: Array (     [:q] => +25930*     [:l] => 1     [:ycp0] => 512     [:ycp1] => 505     [:ycp2] => 504     [:ycp3] => 506 ) )', 'page=0; count=20', 1384859040, '81.24.112.62');
+
+-- 19.11.2013 15:04:27
+INSERT INTO `da_search_history` (`phrase`, `query`, `info`, `date`, `ip`) VALUES ('03141', '(MATCH value AGAINST (:q IN BOOLEAN MODE) AND id_lang=:l) AND (id_object NOT IN (:ycp0, :ycp1, :ycp2, :ycp3)) (params: Array (     [:q] => +03141*     [:l] => 1     [:ycp0] => 512     [:ycp1] => 505     [:ycp2] => 504     [:ycp3] => 506 ) )', 'page=0; count=20', 1384859067, '81.24.112.62');
+
+-- 19.11.2013 15:04:47
+INSERT INTO `da_search_history` (`phrase`, `query`, `info`, `date`, `ip`) VALUES ('1 426 770   ', '(MATCH value AGAINST (:q IN BOOLEAN MODE) AND id_lang=:l) AND (id_object NOT IN (:ycp0, :ycp1, :ycp2, :ycp3)) (params: Array (     [:q] => +426* +770*     [:l] => 1     [:ycp0] => 512     [:ycp1] => 505     [:ycp2] => 504     [:ycp3] => 506 ) )', 'page=0; count=20', 1384859087, '81.24.112.62');
+
+-- 19.11.2013 15:11:30
+INSERT INTO `da_search_history` (`phrase`, `query`, `info`, `date`, `ip`) VALUES ('1426770', '(MATCH value AGAINST (:q IN BOOLEAN MODE) AND id_lang=:l) AND (id_object NOT IN (:ycp0, :ycp1, :ycp2, :ycp3)) (params: Array (     [:q] => +1426770*     [:l] => 1     [:ycp0] => 512     [:ycp1] => 505     [:ycp2] => 504     [:ycp3] => 506 ) )', 'page=0; count=20', 1384859490, '81.24.112.62');
+
+-- 19.11.2013 18:57:21
+INSERT INTO `da_search_history` (`phrase`, `query`, `info`, `date`, `ip`) VALUES ('0061513701', '(MATCH value AGAINST (:q IN BOOLEAN MODE) AND id_lang=:l) AND (id_object NOT IN (:ycp0, :ycp1, :ycp2, :ycp3)) (params: Array (     [:q] => +0061513701*     [:l] => 1     [:ycp0] => 512     [:ycp1] => 505     [:ycp2] => 504     [:ycp3] => 506 ) )', 'page=0; count=20', 1384873041, '109.205.248.18');
+
+-- 20.11.2013 12:09:32
+INSERT INTO `da_search_history` (`phrase`, `query`, `info`, `date`, `ip`) VALUES ('lx450', '(MATCH value AGAINST (:q IN BOOLEAN MODE) AND id_lang=:l) AND (id_object NOT IN (:ycp0, :ycp1, :ycp2, :ycp3)) (params: Array (     [:q] => +lx450*     [:l] => 1     [:ycp0] => 512     [:ycp1] => 505     [:ycp2] => 504     [:ycp3] => 506 ) )', 'page=0; count=20', 1384934971, '81.24.112.62');
+
+-- 20.11.2013 12:10:18
+INSERT INTO `da_search_history` (`phrase`, `query`, `info`, `date`, `ip`) VALUES ('lx450', '(MATCH value AGAINST (:q IN BOOLEAN MODE) AND id_lang=:l) AND (id_object NOT IN (:ycp0, :ycp1, :ycp2, :ycp3)) (params: Array (     [:q] => +lx450*     [:l] => 1     [:ycp0] => 512     [:ycp1] => 505     [:ycp2] => 504     [:ycp3] => 506 ) )', 'page=0; count=20', 1384935018, '81.24.112.62');
+
+-- 20.11.2013 12:17:11
+INSERT INTO `da_search_history` (`phrase`, `query`, `info`, `date`, `ip`) VALUES ('OC195', '(MATCH value AGAINST (:q IN BOOLEAN MODE) AND id_lang=:l) AND (id_object NOT IN (:ycp0, :ycp1, :ycp2, :ycp3)) (params: Array (     [:q] => +OC195*     [:l] => 1     [:ycp0] => 512     [:ycp1] => 505     [:ycp2] => 504     [:ycp3] => 506 ) )', 'page=0; count=20', 1384935431, '81.24.112.62');
+
+-- 20.11.2013 16:32:46
+INSERT INTO `da_search_history` (`phrase`, `query`, `info`, `date`, `ip`) VALUES ('03141', '(MATCH value AGAINST (:q IN BOOLEAN MODE) AND id_lang=:l) AND (id_object NOT IN (:ycp0, :ycp1, :ycp2, :ycp3)) (params: Array (     [:q] => +03141*     [:l] => 1     [:ycp0] => 512     [:ycp1] => 505     [:ycp2] => 504     [:ycp3] => 506 ) )', 'page=0; count=20', 1384950765, '81.24.112.62');
+
+-- 21.11.2013 09:37:42
+INSERT INTO `da_search_history` (`phrase`, `query`, `info`, `date`, `ip`) VALUES ('OC195', '(MATCH value AGAINST (:q IN BOOLEAN MODE) AND id_lang=:l) AND (id_object NOT IN (:ycp0, :ycp1, :ycp2, :ycp3)) (params: Array (     [:q] => +OC195*     [:l] => 1     [:ycp0] => 512     [:ycp1] => 505     [:ycp2] => 504     [:ycp3] => 506 ) )', 'page=0; count=20', 1385012261, '81.24.112.62');
+
+-- 21.11.2013 10:22:55
+INSERT INTO `da_search_history` (`phrase`, `query`, `info`, `date`, `ip`) VALUES ('OC195', '(MATCH value AGAINST (:q IN BOOLEAN MODE) AND id_lang=:l) AND (id_object NOT IN (:ycp0, :ycp1, :ycp2, :ycp3)) (params: Array (     [:q] => +OC195*     [:l] => 1     [:ycp0] => 512     [:ycp1] => 505     [:ycp2] => 504     [:ycp3] => 506 ) )', 'page=0; count=20', 1385014975, '81.24.112.62');
+
+-- 21.11.2013 10:58:59
+INSERT INTO `da_search_history` (`phrase`, `query`, `info`, `date`, `ip`) VALUES ('OC195', '(MATCH value AGAINST (:q IN BOOLEAN MODE) AND id_lang=:l) AND (id_object NOT IN (:ycp0, :ycp1, :ycp2, :ycp3)) (params: Array (     [:q] => +OC195*     [:l] => 1     [:ycp0] => 512     [:ycp1] => 505     [:ycp2] => 504     [:ycp3] => 506 ) )', 'page=0; count=20', 1385017139, '81.24.112.62');
+
+-- 21.11.2013 10:59:30
+INSERT INTO `da_search_history` (`phrase`, `query`, `info`, `date`, `ip`) VALUES ('OC195', '(MATCH value AGAINST (:q IN BOOLEAN MODE) AND id_lang=:l) AND (id_object NOT IN (:ycp0, :ycp1, :ycp2, :ycp3)) (params: Array (     [:q] => +OC195*     [:l] => 1     [:ycp0] => 512     [:ycp1] => 505     [:ycp2] => 504     [:ycp3] => 506 ) )', 'page=0; count=20', 1385017170, '81.24.112.62');
+
+-- 21.11.2013 10:59:46
+INSERT INTO `da_search_history` (`phrase`, `query`, `info`, `date`, `ip`) VALUES ('OC195', '(MATCH value AGAINST (:q IN BOOLEAN MODE) AND id_lang=:l) AND (id_object NOT IN (:ycp0, :ycp1, :ycp2, :ycp3)) (params: Array (     [:q] => +OC195*     [:l] => 1     [:ycp0] => 512     [:ycp1] => 505     [:ycp2] => 504     [:ycp3] => 506 ) )', 'page=0; count=20', 1385017186, '81.24.112.62');
+
+-- 22.11.2013 02:49:25
+INSERT INTO `da_search_history` (`phrase`, `query`, `info`, `date`, `ip`) VALUES ('03189', '(MATCH value AGAINST (:q IN BOOLEAN MODE) AND id_lang=:l) AND (id_object NOT IN (:ycp0, :ycp1, :ycp2, :ycp3)) (params: Array (     [:q] => +03189*     [:l] => 1     [:ycp0] => 512     [:ycp1] => 505     [:ycp2] => 504     [:ycp3] => 506 ) )', 'page=0; count=20', 1385074165, '109.205.248.18');
+
+-- 26.11.2013 11:52:45
+INSERT INTO `da_search_history` (`phrase`, `query`, `info`, `date`, `ip`) VALUES ('1 426 770   ', '(MATCH value AGAINST (:q IN BOOLEAN MODE) AND id_lang=:l) AND (id_object NOT IN (:ycp0, :ycp1, :ycp2, :ycp3)) (params: Array (     [:q] => +426* +770*     [:l] => 1     [:ycp0] => 512     [:ycp1] => 505     [:ycp2] => 504     [:ycp3] => 506 ) )', 'page=0; count=20', 1385452365, '81.24.112.62');
+
+-- 26.11.2013 17:10:15
+INSERT INTO `da_search_history` (`phrase`, `query`, `info`, `date`, `ip`) VALUES ('OC195', '(MATCH value AGAINST (:q IN BOOLEAN MODE) AND id_lang=:l) AND (id_object NOT IN (:ycp0, :ycp1, :ycp2, :ycp3)) (params: Array (     [:q] => +OC195*     [:l] => 1     [:ycp0] => 512     [:ycp1] => 505     [:ycp2] => 504     [:ycp3] => 506 ) )', 'page=0; count=20', 1385471414, '81.24.112.62');
+
+-- 26.11.2013 18:44:15
+UPDATE da_stat_view SET view_count = 1, last_date_process = 1385477055                        WHERE id_object = 260 AND id_instance = 10                        AND view_type = 1 AND last_date_process=1385358120;
+UPDATE da_stat_view SET view_count = (view_count + 1), last_date_process = 1385477055                        WHERE id_object = 260 AND id_instance = 10                        AND view_type = 2 AND last_date_process=1385358120;
+UPDATE da_stat_view SET view_count = (view_count + 1), last_date_process = 1385477055                        WHERE id_object = 260 AND id_instance = 10                        AND view_type = 3 AND last_date_process=1385358120;
+

@@ -1,0 +1,40 @@
+<?php
+
+// This is the main Web application configuration. Any writable
+// application properties can be configured here.
+return array(
+	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
+	'name'=>'Rusimport',
+
+	// autoloading model and component classes
+	'import'=>array(
+		'application.models.*',
+		'application.controllers.*',
+		'application.components.*',
+	),
+	
+	// application components
+	'components'=>array(
+		 'db'=>array(
+			'class'=>'CDbConnection',
+			'connectionString'=>'mysql:host=laf24.ru;dbname=rusimport_new',
+//			'connectionString'=>'mysql:host=192.168.0.189;dbname=rusimport_new',
+			'username'=>'rusimport_user',
+			'password'=>'OPxQ79KB',
+			'emulatePrepare'=>true  // необходимо для некоторых версий инсталляций MySQL
+		),
+		'dbU'=>array(
+			'class'=>'CDbConnection',
+			//'connectionString'=>'mssql:host=192.168.0.208:1433;dbname=T_Uchet',
+			'connectionString' => 'sqlsrv:server=192.168.0.208\sqlexpress,1433;Database=T_Uchet;',
+			'username'=>'sa',
+			'password'=>'masterkey',
+			//'emulatePrepare'=>false,  // необходимо для некоторых версий инсталляций MySQL
+		),
+		'urlManager'=>array(
+			'urlFormat'=>'path',
+			'showScriptName'=>false,
+			'urlSuffix'=>'/',
+		),
+	),
+);

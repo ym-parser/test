@@ -1,0 +1,10 @@
+<?
+$HOST = 'laf24.ru:14666';
+$USER = 'sa';
+$PASS = 'masterkey';
+/****** Рабочая версия вызова процедуры ********/
+	$conn = mssql_connect ($HOST, $USER, $PASS);
+	 $db = 'Uchet'; //Имя базы
+	 $procedure = 'dbo.GetCalculations'; //название процедуры
+	  mssql_select_db($db);
+?>
