@@ -9,7 +9,9 @@ Class RemoteWh{
 	}
 	# Возвращает всю информацию по одному удалённому складу 
 	public function rwhGetOne($sid){
-		$command = Yii::app()->dbU->createCommand("EXECUTE [RUSIMPORT].[dbo].[rwhGetOne] @sklad_id=".(int)$sid);
+		$command = Yii::app()->dbU->createCommand("EXECUTE [RUSIMPORT].[dbo].[rwhGetOne] @sklad_id=:sid");
+		$command->bindParam(":sid",	$sid,PDO::PARAM_INT);
+		$command->execute();
 		$res = $command->queryRow();
 		return $res;
 	}
@@ -51,6 +53,15 @@ Class RemoteWh{
 		$command->bindParam(":goods",$goods,PDO::PARAM_STR);
 		$command->execute();
 		$res = $command->queryRow();
+		return $res;
+	}
+	# 
+	public function rwhGetAutoData($id){
+		$res = Yii::app()->db->createCommand()
+			->select('*')
+			->from('rem_sklad_auto_data')
+			->where('sid=:sid',array(':sid'=>$id))
+			->queryRow();
 		return $res;
 	}
 }

@@ -369,7 +369,7 @@ class PriceCommand extends CConsoleCommand {
 		$subj = $this->sklad->getSubj($mail_data);
 		#Поучаем информацию из письма
 		$mail = $this->sklad->get_mail($mail_data['from_lett'],$subj,1);
-		var_dump($mail);
+		#var_dump($mail);
 		$price = $this->sklad->parse_attach($mail_data,$mail);
 		# Бренд - Арт - Имя - кол-во -цена
 		$lines = $this->sklad->get_arr_uchetAuto($price,$mail_data['markup'],$mail_data['col_brand'],$mail_data['col_art'],$mail_data['col_name'],$mail_data['col_cnt'],$mail_data['col_price']);

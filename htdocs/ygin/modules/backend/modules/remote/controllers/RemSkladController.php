@@ -17,8 +17,9 @@ class RemSkladController extends DaObjectController {
 	}
 	public function actionSklad($id) {
 		$this->render('/sklad', array(
-			'sklad' => $this->whr->rwhGetOne((int)$id),
-			'items' => $this->whr->rwhGetDetailsPage(array('id'=>(int)$id,'show'=>21,'page'=>1)),
+			'sklad'	=> $this->whr->rwhGetOne((int)$id),
+			'auto'	=> $this->whr->rwhGetAutoData((int)$id),
+			'items'	=> $this->whr->rwhGetDetailsPage(array('id'=>(int)$id,'show'=>21,'page'=>1)),
 			'id'	=>$id,
 		));
 	}
