@@ -7127,3 +7127,211 @@ Stack trace:
 #1 unknown(0): BackendApplication->onShutdownHandler()
 REQUEST_URI=/admin/sklad/37/
 in /var/www/rusimport/data/www/rusimport.majordomo.ru/htdocs/ygin/components/BaseApplication.php (64)
+2013/11/28 17:07:08 [info] [application] User: admin (ID: 106)
+
+$_GET=array (
+  'id' => '37',
+)
+
+$_COOKIE=array (
+  '__utma' => '192063989.2104815317.1382692916.1382692916.1384330973.2',
+  '__utmz' => '192063989.1384330973.2.2.utmcsr=redmine.laf24.ru|utmccn=(referral)|utmcmd=referral|utmcct=/issues/242',
+  'daMenuCategoty' => 
+  array (
+    'smm-4' => '1',
+    'smm-2' => '1',
+    'smm-1' => '1',
+    'smm-project-podgrughaemye-praisy' => '1',
+  ),
+  '__2gis_js_api' => 'userId=13150966-cd23-c9e8-b180-0eba26714b55|domain=rusimport.majordomo.ru|lastPath=blank|lastTime=1384930642847|pageViews=2|sessions=1|saveErrors=0',
+  'PHPSESSID' => 'u724pr2htksuftaetbepo4mi73',
+  'b77b6ed1c1a80553012028142b4bfa1a' => '2b7644e67b6cd19d126ef1bb972b29a73451e145a:4:{i:0;s:3:"106";i:1;s:5:"admin";i:2;i:0;i:3;a:0:{}}',
+)
+
+$_SESSION=array (
+  'b77b6ed1c1a80553012028142b4bfa1a__returnUrl' => '/admin%5d/',
+  'b77b6ed1c1a80553012028142b4bfa1a__id' => '106',
+  'b77b6ed1c1a80553012028142b4bfa1a__name' => 'admin',
+  'b77b6ed1c1a80553012028142b4bfa1a__states' => 
+  array (
+  ),
+)
+
+$_SERVER=array (
+  'REDIRECT_STATUS' => '200',
+  'HTTP_HOST' => 'rusimport.majordomo.ru',
+  'HTTP_CONNECTION' => 'keep-alive',
+  'HTTP_CACHE_CONTROL' => 'max-age=0',
+  'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36',
+  'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch',
+  'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,bg;q=0.2',
+  'HTTP_COOKIE' => '__utma=192063989.2104815317.1382692916.1382692916.1384330973.2; __utmz=192063989.1384330973.2.2.utmcsr=redmine.laf24.ru|utmccn=(referral)|utmcmd=referral|utmcct=/issues/242; daMenuCategoty%5Bsmm-4%5D=1; __2gis_js_api=userId=13150966-cd23-c9e8-b180-0eba26714b55|domain=rusimport.majordomo.ru|lastPath=blank|lastTime=1384930642847|pageViews=2|sessions=1|saveErrors=0; __utma=1.360964715.1384930588.1384930588.1384930588.1; __utmz=1.1384930588.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); daMenuCategoty%5Bsmm-2%5D=1; daMenuCategoty%5Bsmm-1%5D=1; PHPSESSID=u724pr2htksuftaetbepo4mi73; daMenuCategoty%5Bsmm-project-podgrughaemye-praisy%5D=1; b77b6ed1c1a80553012028142b4bfa1a=2b7644e67b6cd19d126ef1bb972b29a73451e145a%3A4%3A%7Bi%3A0%3Bs%3A3%3A%22106%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A0%3Bi%3A3%3Ba%3A0%3A%7B%7D%7D',
+  'PATH' => '/usr/local/bin:/usr/bin:/bin',
+  'SERVER_SIGNATURE' => '<address>Apache/2.2.22 (Debian) Server at rusimport.majordomo.ru Port 80</address>
+',
+  'SERVER_SOFTWARE' => 'Apache/2.2.22 (Debian)',
+  'SERVER_NAME' => 'rusimport.majordomo.ru',
+  'SERVER_ADDR' => '78.108.82.193',
+  'SERVER_PORT' => '80',
+  'REMOTE_ADDR' => '81.24.112.62',
+  'DOCUMENT_ROOT' => '/var/www/rusimport/data/www/rusimport.majordomo.ru/htdocs',
+  'SERVER_ADMIN' => 'webmaster@rusimport.majordomo.ru',
+  'SCRIPT_FILENAME' => '/var/www/rusimport/data/www/rusimport.majordomo.ru/htdocs/index.php',
+  'REMOTE_PORT' => '51856',
+  'REDIRECT_URL' => '/admin/sklad/37/',
+  'GATEWAY_INTERFACE' => 'CGI/1.1',
+  'SERVER_PROTOCOL' => 'HTTP/1.1',
+  'REQUEST_METHOD' => 'GET',
+  'QUERY_STRING' => '',
+  'REQUEST_URI' => '/admin/sklad/37/',
+  'SCRIPT_NAME' => '/index.php',
+  'PHP_SELF' => '/index.php',
+  'REQUEST_TIME_FLOAT' => 1385644028.633,
+  'REQUEST_TIME' => 1385644028,
+  'HTTP_X_REWRITE_URL' => NULL,
+)
+2013/11/28 17:07:09 [error] [php] Fatal error: syntax error, unexpected '[', expecting ',' or ';' (/var/www/rusimport/data/www/rusimport.majordomo.ru/htdocs/ygin/modules/backend/modules/remote/views/sklad.php:18)
+Stack trace:
+#0 /var/www/rusimport/data/www/rusimport.majordomo.ru/htdocs/ygin/components/BaseApplication.php(64): BackendApplication->handleError()
+#1 unknown(0): BackendApplication->onShutdownHandler()
+REQUEST_URI=/admin/sklad/37/
+2013/11/28 17:15:37 [info] [application] User: admin (ID: 106)
+
+$_GET=array (
+  'id' => '37',
+)
+
+$_COOKIE=array (
+  '__utma' => '192063989.2104815317.1382692916.1382692916.1384330973.2',
+  '__utmz' => '192063989.1384330973.2.2.utmcsr=redmine.laf24.ru|utmccn=(referral)|utmcmd=referral|utmcct=/issues/242',
+  'daMenuCategoty' => 
+  array (
+    'smm-4' => '1',
+    'smm-2' => '1',
+    'smm-1' => '1',
+    'smm-project-podgrughaemye-praisy' => '1',
+  ),
+  '__2gis_js_api' => 'userId=13150966-cd23-c9e8-b180-0eba26714b55|domain=rusimport.majordomo.ru|lastPath=blank|lastTime=1384930642847|pageViews=2|sessions=1|saveErrors=0',
+  'PHPSESSID' => 'u724pr2htksuftaetbepo4mi73',
+  'b77b6ed1c1a80553012028142b4bfa1a' => '2b7644e67b6cd19d126ef1bb972b29a73451e145a:4:{i:0;s:3:"106";i:1;s:5:"admin";i:2;i:0;i:3;a:0:{}}',
+)
+
+$_SESSION=array (
+  'b77b6ed1c1a80553012028142b4bfa1a__returnUrl' => '/admin%5d/',
+  'b77b6ed1c1a80553012028142b4bfa1a__id' => '106',
+  'b77b6ed1c1a80553012028142b4bfa1a__name' => 'admin',
+  'b77b6ed1c1a80553012028142b4bfa1a__states' => 
+  array (
+  ),
+)
+
+$_SERVER=array (
+  'REDIRECT_STATUS' => '200',
+  'HTTP_HOST' => 'rusimport.majordomo.ru',
+  'HTTP_CONNECTION' => 'keep-alive',
+  'HTTP_CACHE_CONTROL' => 'max-age=0',
+  'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36',
+  'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch',
+  'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,bg;q=0.2',
+  'HTTP_COOKIE' => '__utma=192063989.2104815317.1382692916.1382692916.1384330973.2; __utmz=192063989.1384330973.2.2.utmcsr=redmine.laf24.ru|utmccn=(referral)|utmcmd=referral|utmcct=/issues/242; daMenuCategoty%5Bsmm-4%5D=1; __2gis_js_api=userId=13150966-cd23-c9e8-b180-0eba26714b55|domain=rusimport.majordomo.ru|lastPath=blank|lastTime=1384930642847|pageViews=2|sessions=1|saveErrors=0; __utma=1.360964715.1384930588.1384930588.1384930588.1; __utmz=1.1384930588.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); daMenuCategoty%5Bsmm-2%5D=1; daMenuCategoty%5Bsmm-1%5D=1; PHPSESSID=u724pr2htksuftaetbepo4mi73; daMenuCategoty%5Bsmm-project-podgrughaemye-praisy%5D=1; b77b6ed1c1a80553012028142b4bfa1a=2b7644e67b6cd19d126ef1bb972b29a73451e145a%3A4%3A%7Bi%3A0%3Bs%3A3%3A%22106%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A0%3Bi%3A3%3Ba%3A0%3A%7B%7D%7D',
+  'PATH' => '/usr/local/bin:/usr/bin:/bin',
+  'SERVER_SIGNATURE' => '<address>Apache/2.2.22 (Debian) Server at rusimport.majordomo.ru Port 80</address>
+',
+  'SERVER_SOFTWARE' => 'Apache/2.2.22 (Debian)',
+  'SERVER_NAME' => 'rusimport.majordomo.ru',
+  'SERVER_ADDR' => '78.108.82.193',
+  'SERVER_PORT' => '80',
+  'REMOTE_ADDR' => '81.24.112.62',
+  'DOCUMENT_ROOT' => '/var/www/rusimport/data/www/rusimport.majordomo.ru/htdocs',
+  'SERVER_ADMIN' => 'webmaster@rusimport.majordomo.ru',
+  'SCRIPT_FILENAME' => '/var/www/rusimport/data/www/rusimport.majordomo.ru/htdocs/index.php',
+  'REMOTE_PORT' => '51925',
+  'REDIRECT_URL' => '/admin/sklad/37/',
+  'GATEWAY_INTERFACE' => 'CGI/1.1',
+  'SERVER_PROTOCOL' => 'HTTP/1.1',
+  'REQUEST_METHOD' => 'GET',
+  'QUERY_STRING' => '',
+  'REQUEST_URI' => '/admin/sklad/37/',
+  'SCRIPT_NAME' => '/index.php',
+  'PHP_SELF' => '/index.php',
+  'REQUEST_TIME_FLOAT' => 1385644537.443,
+  'REQUEST_TIME' => 1385644537,
+  'HTTP_X_REWRITE_URL' => '/sklad/37/',
+)
+2013/11/28 17:15:37 [error] [php] Fatal error: syntax error, unexpected '{' (/var/www/rusimport/data/www/rusimport.majordomo.ru/htdocs/ygin/modules/backend/modules/remote/models/RemoteWh.php:65)
+Stack trace:
+#0 /var/www/rusimport/data/www/rusimport.majordomo.ru/htdocs/ygin/components/BaseApplication.php(64): BackendApplication->handleError()
+#1 unknown(0): BackendApplication->onShutdownHandler()
+REQUEST_URI=/admin/sklad/37/
+2013/11/28 17:16:31 [info] [application] User: admin (ID: 106)
+
+$_GET=array (
+  'id' => '37',
+)
+
+$_COOKIE=array (
+  '__utma' => '192063989.2104815317.1382692916.1382692916.1384330973.2',
+  '__utmz' => '192063989.1384330973.2.2.utmcsr=redmine.laf24.ru|utmccn=(referral)|utmcmd=referral|utmcct=/issues/242',
+  'daMenuCategoty' => 
+  array (
+    'smm-4' => '1',
+    'smm-2' => '1',
+    'smm-1' => '1',
+    'smm-project-podgrughaemye-praisy' => '1',
+  ),
+  '__2gis_js_api' => 'userId=13150966-cd23-c9e8-b180-0eba26714b55|domain=rusimport.majordomo.ru|lastPath=blank|lastTime=1384930642847|pageViews=2|sessions=1|saveErrors=0',
+  'PHPSESSID' => 'u724pr2htksuftaetbepo4mi73',
+  'b77b6ed1c1a80553012028142b4bfa1a' => '2b7644e67b6cd19d126ef1bb972b29a73451e145a:4:{i:0;s:3:"106";i:1;s:5:"admin";i:2;i:0;i:3;a:0:{}}',
+)
+
+$_SESSION=array (
+  'b77b6ed1c1a80553012028142b4bfa1a__returnUrl' => '/admin%5d/',
+  'b77b6ed1c1a80553012028142b4bfa1a__id' => '106',
+  'b77b6ed1c1a80553012028142b4bfa1a__name' => 'admin',
+  'b77b6ed1c1a80553012028142b4bfa1a__states' => 
+  array (
+  ),
+)
+
+$_SERVER=array (
+  'REDIRECT_STATUS' => '200',
+  'HTTP_HOST' => 'rusimport.majordomo.ru',
+  'HTTP_CONNECTION' => 'keep-alive',
+  'HTTP_CACHE_CONTROL' => 'max-age=0',
+  'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36',
+  'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch',
+  'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,bg;q=0.2',
+  'HTTP_COOKIE' => '__utma=192063989.2104815317.1382692916.1382692916.1384330973.2; __utmz=192063989.1384330973.2.2.utmcsr=redmine.laf24.ru|utmccn=(referral)|utmcmd=referral|utmcct=/issues/242; daMenuCategoty%5Bsmm-4%5D=1; __2gis_js_api=userId=13150966-cd23-c9e8-b180-0eba26714b55|domain=rusimport.majordomo.ru|lastPath=blank|lastTime=1384930642847|pageViews=2|sessions=1|saveErrors=0; __utma=1.360964715.1384930588.1384930588.1384930588.1; __utmz=1.1384930588.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); daMenuCategoty%5Bsmm-2%5D=1; daMenuCategoty%5Bsmm-1%5D=1; PHPSESSID=u724pr2htksuftaetbepo4mi73; daMenuCategoty%5Bsmm-project-podgrughaemye-praisy%5D=1; b77b6ed1c1a80553012028142b4bfa1a=2b7644e67b6cd19d126ef1bb972b29a73451e145a%3A4%3A%7Bi%3A0%3Bs%3A3%3A%22106%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A0%3Bi%3A3%3Ba%3A0%3A%7B%7D%7D',
+  'PATH' => '/usr/local/bin:/usr/bin:/bin',
+  'SERVER_SIGNATURE' => '<address>Apache/2.2.22 (Debian) Server at rusimport.majordomo.ru Port 80</address>
+',
+  'SERVER_SOFTWARE' => 'Apache/2.2.22 (Debian)',
+  'SERVER_NAME' => 'rusimport.majordomo.ru',
+  'SERVER_ADDR' => '78.108.82.193',
+  'SERVER_PORT' => '80',
+  'REMOTE_ADDR' => '81.24.112.62',
+  'DOCUMENT_ROOT' => '/var/www/rusimport/data/www/rusimport.majordomo.ru/htdocs',
+  'SERVER_ADMIN' => 'webmaster@rusimport.majordomo.ru',
+  'SCRIPT_FILENAME' => '/var/www/rusimport/data/www/rusimport.majordomo.ru/htdocs/index.php',
+  'REMOTE_PORT' => '51929',
+  'REDIRECT_URL' => '/admin/sklad/37/',
+  'GATEWAY_INTERFACE' => 'CGI/1.1',
+  'SERVER_PROTOCOL' => 'HTTP/1.1',
+  'REQUEST_METHOD' => 'GET',
+  'QUERY_STRING' => '',
+  'REQUEST_URI' => '/admin/sklad/37/',
+  'SCRIPT_NAME' => '/index.php',
+  'PHP_SELF' => '/index.php',
+  'REQUEST_TIME_FLOAT' => 1385644591.531,
+  'REQUEST_TIME' => 1385644591,
+  'HTTP_X_REWRITE_URL' => '/sklad/37/',
+)
+2013/11/28 17:16:31 [error] [php] Fatal error: syntax error, unexpected '{' (/var/www/rusimport/data/www/rusimport.majordomo.ru/htdocs/ygin/modules/backend/modules/remote/models/RemoteWh.php:65)
+Stack trace:
+#0 /var/www/rusimport/data/www/rusimport.majordomo.ru/htdocs/ygin/components/BaseApplication.php(64): BackendApplication->handleError()
+#1 unknown(0): BackendApplication->onShutdownHandler()
+REQUEST_URI=/admin/sklad/37/
+in /var/www/rusimport/data/www/rusimport.majordomo.ru/htdocs/ygin/components/BaseApplication.php (64)

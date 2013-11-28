@@ -62,6 +62,24 @@ Class RemoteWh{
 			->from('rem_sklad_auto_data')
 			->where('sid=:sid',array(':sid'=>$id))
 			->queryRow();
-		return $res;
+		if (!empty($res)){
+			return $res;
+		}else{
+			return array (
+				'sid'		  => NULL,
+				'use_date'	  => NULL,
+				'format_date' => NULL,
+				'monday_date' => NULL,
+				'default_date'=> NULL,
+				'from_lett'	  => NULL,
+				'subj_lett'	  => NULL,
+				'markup'	  => NULL,
+				'col_brand'	  => NULL,
+				'col_art'	  => NULL,
+				'col_name'	  => NULL,
+				'col_cnt'	  => NULL,
+				'col_price'	  => NULL,
+			);
+		}
 	}
 }

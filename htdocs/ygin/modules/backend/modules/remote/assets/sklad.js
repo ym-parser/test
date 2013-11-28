@@ -10,3 +10,6 @@ function saveSklad(sid){
 		})
 		.fail($('#ressMess').html('<p>Грузимся</p>'));
 }
+function ShowDate(){
+	alert('ставим обработчик на показ/скрытие таблицы даты')
+}

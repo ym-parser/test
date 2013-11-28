@@ -16,9 +16,17 @@ class RemSkladController extends DaObjectController {
 		));
 	}
 	public function actionSklad($id) {
+		$model['auto'] = $this->whr->rwhGetAutoData((int)$id);
+		if(!empty($model['auto']['use_date'])){
+			$model['chek'] = 'checked';
+			$model['display'] = 'block';
+		}else{
+			$model['chek'] = '';
+			$model['display'] = 'none';
+		}
 		$this->render('/sklad', array(
 			'sklad'	=> $this->whr->rwhGetOne((int)$id),
-			'auto'	=> $this->whr->rwhGetAutoData((int)$id),
+			'model'	=> $model,
 			'items'	=> $this->whr->rwhGetDetailsPage(array('id'=>(int)$id,'show'=>21,'page'=>1)),
 			'id'	=>$id,
 		));
