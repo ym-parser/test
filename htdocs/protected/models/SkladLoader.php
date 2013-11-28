@@ -1,6 +1,10 @@
 <?php
 Class SkladLoader{
 	protected $dir = '/var/www/rusimport/data/www/rusimport.majordomo.ru/htdocs/protected/commands/prices/zip/';
+	protected $decode;
+	public function __construct(){
+		$this->decode = new Decode();
+	}
 	# Входные параметры массив прайса,ид склада, процент наценки
 	# Сохраняем склад в базу
 	public function save_db($price,$sid,$num){
@@ -357,14 +361,7 @@ Class SkladLoader{
 			}
 			foreach ($tmp as $id=>&$row){
 				foreach ($row as &$val){
-					$char = mb_detect_encoding($val,'auto');
-					var_dump($char);
-					if ($char != 'UTF-8'){
-						if ($char == 'ANSI'){$char = 'WINDOWS-1251';}
-						var_dump($char);
-						var_dump($val);
-						$val = iconv($char.'//TRANSLIT','UTF-8',$val);
-					}
+					$val = $this->decode->charset_x_utf($val);
 					$price[$id][$i]=$val;
 					++$i;
 				}
