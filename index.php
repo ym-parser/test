@@ -2,6 +2,6 @@
 
 echo 'helow world';
 
-echo 'master add';
+echo 'master';
 
 ?>
