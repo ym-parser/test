@@ -1,12 +1,6 @@
 <?php
 
-//echo 'helow world';
-
-//echo 'some new info';
+echo 'Сделал правки из гита, веб морды';
 
 //echo 'master';
-
-
-//много чего поменял, а  лай ла!
-
 ?>
